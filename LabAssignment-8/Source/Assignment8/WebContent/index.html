@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="" >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+</head>
+<style>
+body{
+	background:url('http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/07/white-background-10.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-control{
+    border-radius:8px;
+}
+.navbar{
+    background: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcqL4yR4_KK5CmSx4QpsnopxpcmAenNiU82K2IPl3b0w4p0dqV');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.navbar-brand{
+    color:white;
+    font-family: Microsoft sans-serif;
+    font-size:35px;
+    padding-left:40%;
+}
+.btn{
+	margin-top:20px;
+	background:#2bcae2;
+}
+#buttons{	
+	margin-left:17%;
+}
+a{
+	color:white;
+}
+.form-group{
+	margin-top:10%;
+}
+.text{
+	margin-top:10px;
+	width:50%;
+	margin-left:17%;
+}
+img#icon {
+height:400px;
+width:400px;
+    float: right;
+    margin-top: -270px;
+    margin-right:100px;
+}
+</style>
+<body>
+<nav class="navbar navbar-light bg-faded">
+    <h1 class="navbar-brand m-b-0">Interest Calculator
+    </h1>
+</nav>
+<div class="form-group">
+    <div class="text">
+        <input class="form-control" id="amount" type="text" placeholder="Enter Amount">
+    </div>
+    <div class="text">
+        <input class="form-control" id="years" type="text" placeholder="Enter No. of Years">
+    </div>
+    <div class="text">
+        <input class="form-control" id="interest" type="text" placeholder="Enter Interest Rate">
+    </div>
+    <div id="buttons">
+    <button type="button" class="btn btn-default"><a href="http://localhost:8080/RESTExample/restexample/SIService/si/2000/1/1.5">Calculate Simple Interest</a></button>
+ <button type="button" class="btn btn-default"><a href="http://localhost:8080/RESTExample/restexample/CIService/ci/2000/1/1.5">Calculate Compound Interest</a></button>
+ </div>
+</div>
+
+<img src="http://www.freeiconspng.com/uploads/percentage-png-8.png" id="icon">
+
+
+</body>
+</html>
+   

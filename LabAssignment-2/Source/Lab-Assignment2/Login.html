@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Login Page</title>
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css">
+    <link rel="stylesheet" href="Login.css">
+
+    <!-- JS Links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+    <script src="LoginController.js"></script>
+</head>
+<body>
+<div ng-app="myApp">
+    <div  ng-controller="LoginController" class="col-md-6 col-md-offset-3 loginContainer">
+        <h2>Welcome</h2>
+        <form novalidate name="form" ng-submit="Login()">
+            <div class="failure">{{Message}}</div>
+            <div class="input-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
+    	   <span class="input-group-addon">
+                <i class="glyphicon glyphicon-user"></i>
+            </span>
+                <input type="text" name="username" id="username" placeholder="Username" class="form-control" ng-model="LoginData.Username" required />
+                <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username is required</span>
+            </div>
+            <div class="input-group" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+    	  <span class="input-group-addon">
+                <i class="glyphicon glyphicon-lock"></i>
+            </span>
+                <input type="password" name="password" id="password" placeholder="Password" class="form-control" ng-model="LoginData.Password" required />
+                <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+            </div>
+            <div class="form-actions">
+                <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary">Login</button>
+                <a href="RegistrationPage.html" class="btn btn-link">Register</a>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

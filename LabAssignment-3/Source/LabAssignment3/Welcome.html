@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="" >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css">
+    <link rel="stylesheet" href="Welcome.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js" type="application/javascript"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-light bg-faded">
+    <h1 class="navbar-brand m-b-0">Welcome
+    </h1>
+    <a href="LoginPage.html" class="btn btn-link" id="logout">Logout
+        <span >
+                <i class="glyphicon glyphicon-off"></i>
+            </span></a>
+</nav>
+<div class="row">
+<div class="col-md-12">
+    <div class="apiClass">
+        <span id="spanFaceDetectionHeading">Face Detection:</span>
+        <p class="intro">
+            Face detection is a computer technology being used in a variety of applications that identifies human faces in digital images. Face detection also refers to the psychological process by which humans locate and attend to faces in a visual scene
+        </p>
+        <button type="submit" class="btn btn-primary" id="faceDetection" onclick="location.href='FaceDetection.html'" class="btn btn-primary">Face Detection</button>
+    </div>
+    <div class="apiClass">
+        <span id="spanTextToSpeechHeading">Text to Speech</span>
+        <p class="intro">
+            Speech to Text can be used anywhere there is a need to bridge the gap between the spoken word and its written form. This easy-to-use service uses machine intelligence to combine information about grammar and language structure with knowledge of the composition of an audio signal to generate an accurate transcription. It uses IBM's speech recognition capabilities to convert speech in multiple languages into text.
+        </p>
+        <button type="submit" class="btn btn-primary" id="textToSpeech" onclick="location.href='textToSpeech.html'" class="btn btn-primary">Text to Speech</button>
+    </div>
+    <div class="apiClass">
+        <span id="spanBarCodeHeading">Barcode Scanner</span>
+        <p class="intro">
+            Inlite's Barcode scanner software is the best barcode recognition solution for your product, Web Site or IT department. Enable your Windows application or Web Service to read barcodes from any image file, database, mobile phone camera, scanner or fax.
+        </p>
+        <button type="submit" class="btn btn-primary" id="barCodeScanner" onclick="location.href='barCodeScanner.html'" class="btn btn-primary">Barcode Scanner</button>
+    </div>
+</div>
+</div>
+</body>
+</html>
